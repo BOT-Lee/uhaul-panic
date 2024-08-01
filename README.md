@@ -17,7 +17,7 @@ https://silentwolf.com/features.
 Follow the guide in the "Set up your leaderboard" section if necessary.
 
 # Released Game Builds
-The "Released_Game_Builds" folder contains the exports of the game for both Windows and Android.
+The "Released_Game_Builds" folder contains the exports of the game for both Windows and Android, which are the main files of interest.
 
 "UhaulPanic.exe" contains the latest build of the game, exported for use on Windows machines. 
 To run the game on PC without looking at the project itself, run "UhaulPanic.exe."
