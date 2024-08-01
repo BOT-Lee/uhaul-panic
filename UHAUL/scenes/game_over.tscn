@@ -1,0 +1,31 @@
+[gd_scene load_steps=5 format=3 uid="uid://dwt823tpihg7y"]
+
+[ext_resource type="FontFile" uid="uid://33c7k13n65ee" path="res://assets/c08n__.ttf" id="1_s0aou"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2b8om"]
+bg_color = Color(0.719293, 0.263788, 0.00334345, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cpgid"]
+bg_color = Color(0.997739, 0.395768, 0.0880299, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_skr1n"]
+bg_color = Color(1, 0.692581, 0.542812, 1)
+
+[node name="GameOverButton" type="Button"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -153.0
+offset_top = -28.0
+offset_right = 153.0
+offset_bottom = 28.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_s0aou")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_2b8om")
+theme_override_styles/hover = SubResource("StyleBoxFlat_cpgid")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_skr1n")
+text = "Restart?"

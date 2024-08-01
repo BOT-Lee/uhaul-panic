@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://d3ivrd27siku4"]
+
+[ext_resource type="Script" path="res://scenes/tv.gd" id="1_p1go6"]
+[ext_resource type="Texture2D" uid="uid://bjw82s6y5nh2o" path="res://assets/TV.png" id="1_shxka"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2afyy"]
+size = Vector2(130, 94)
+
+[node name="Area2D" type="Area2D"]
+script = ExtResource("1_p1go6")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+scale = Vector2(3, 3)
+texture = ExtResource("1_shxka")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_2afyy")

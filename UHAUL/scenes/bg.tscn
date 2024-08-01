@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://d3xo3ukypm1h7"]
+
+[ext_resource type="Texture2D" uid="uid://dj1n34p1ihr5r" path="res://assets/UHAUL_Background_Part1.png" id="1_730bd"]
+[ext_resource type="Texture2D" uid="uid://co1t4tixylvby" path="res://assets/UHaul_Background_Part2.png" id="2_ayw7w"]
+
+[node name="bg" type="ParallaxBackground"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_730bd")
+centered = false
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.7, 1)
+motion_mirroring = Vector2(1152, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxLayer"]
+texture = ExtResource("2_ayw7w")
+centered = false

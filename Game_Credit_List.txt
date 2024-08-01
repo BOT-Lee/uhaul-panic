@@ -1,0 +1,32 @@
+Credits List:
+
+Assets:
+Pixel Protagonist - Penzilla (https://penzilla.itch.io/protagonist-character)
+Pixel Furniture - OblivionStudio (https://oblivionstudio.itch.io/furniture?download)
+Wood Set - @nyk_nck (https://nyknck.itch.io/wood-set)
+Xbox Buttons - Arks (https://arks.itch.io/xbox-buttons)
+Font: Chubu08 - Akihiro (https://www.dafont.com/chubu08.font?text=U-HAUL)
+
+Gameplay Loop Development Help (Video Tutorial):
+https://www.youtube.com/watch?v=nKBhz6oJYsc
+
+Leaderboard:
+https://silentwolf.com/download
+https://escada-games.itch.io/jump3match/devlog/242610/making-a-simple-online-leaderboard-in-godot-with-silentwolf
+https://silentwolf.com/leaderboard
+https://www.youtube.com/watch?v=GdcoWDW0vEE
+
+Attacking:
+https://kidscancode.org/godot_recipes/3.x/animation/melee_attacks/
+
+Buttons:
+https://ramatak.com/2023/02/24/godot-tutorial-porting-your-games-controls-for-mobile-devices/
+https://www.youtube.com/watch?v=K8MDPR5yxV0
+
+Connecting multiple signals to body_entered:
+https://stackoverflow.com/questions/77360041/how-to-connect-a-signal-with-extra-arguments-in-godot-4
+https://docs.godotengine.org/en/stable/classes/class_object.html#class-object-method-connect
+
+Exporting to Android:
+https://www.youtube.com/watch?v=ui-oWldXAdg
+https://docs.godotengine.org/en/stable/tutorials/export/exporting_for_android.html

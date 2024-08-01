@@ -1,0 +1,28 @@
+[gd_scene load_steps=8 format=3 uid="uid://0mqynlt5l3oo"]
+
+[ext_resource type="Script" path="res://scenes/main_scene.gd" id="1_4j8k3"]
+[ext_resource type="PackedScene" uid="uid://d3xo3ukypm1h7" path="res://scenes/bg.tscn" id="1_ftwor"]
+[ext_resource type="PackedScene" uid="uid://cji4k7wxm0ddm" path="res://scenes/ground.tscn" id="2_5hise"]
+[ext_resource type="PackedScene" uid="uid://csk76j120s3go" path="res://scenes/worker.tscn" id="3_bg48r"]
+[ext_resource type="PackedScene" uid="uid://6bsaf8re8rq1" path="res://scenes/basic_hud.tscn" id="5_b3rrh"]
+[ext_resource type="PackedScene" uid="uid://w2x5y2fu4155" path="res://scenes/touch_screen_controls.tscn" id="7_pd5ji"]
+[ext_resource type="PackedScene" uid="uid://byql4r5udvn3r" path="res://scenes/final_result.tscn" id="8_qu5do"]
+
+[node name="main_scene" type="Node"]
+script = ExtResource("1_4j8k3")
+
+[node name="bg" parent="." instance=ExtResource("1_ftwor")]
+
+[node name="Ground" parent="." instance=ExtResource("2_5hise")]
+
+[node name="Worker" parent="." instance=ExtResource("3_bg48r")]
+position = Vector2(72, 456)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(576, 324)
+
+[node name="BasicHUD" parent="." instance=ExtResource("5_b3rrh")]
+
+[node name="TouchScreenControls" parent="." instance=ExtResource("7_pd5ji")]
+
+[node name="FinalResultCanvas" parent="." instance=ExtResource("8_qu5do")]

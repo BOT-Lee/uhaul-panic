@@ -1,0 +1,88 @@
+[gd_scene load_steps=7 format=3 uid="uid://byql4r5udvn3r"]
+
+[ext_resource type="FontFile" uid="uid://33c7k13n65ee" path="res://assets/c08n__.ttf" id="1_bn8xj"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_l20xl"]
+bg_color = Color(0, 0, 0, 0.654902)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gekad"]
+bg_color = Color(0.133333, 0.133333, 0.133333, 0.819608)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_06t4i"]
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_k8lf3"]
+bg_color = Color(0.259294, 0.259294, 0.259294, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xej5v"]
+bg_color = Color(0.77084, 0.770839, 0.770839, 1)
+
+[node name="FinalResultCanvas" type="CanvasLayer"]
+process_mode = 2
+
+[node name="FinalResult" type="PanelContainer" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_l20xl")
+
+[node name="FinalResult" type="MarginContainer" parent="FinalResult"]
+layout_mode = 2
+
+[node name="ScoreContainer" type="VBoxContainer" parent="FinalResult/FinalResult"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+alignment = 1
+
+[node name="YourScoreLabel" type="Label" parent="FinalResult/FinalResult/ScoreContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_bn8xj")
+theme_override_font_sizes/font_size = 40
+text = "Your Score:"
+
+[node name="ActualScoreLabel" type="Label" parent="FinalResult/FinalResult/ScoreContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_bn8xj")
+theme_override_font_sizes/font_size = 20
+text = "Insert Score Here"
+horizontal_alignment = 1
+
+[node name="HSeparator" type="HSeparator" parent="FinalResult/FinalResult/ScoreContainer"]
+layout_mode = 2
+
+[node name="EnteredNameLine" type="LineEdit" parent="FinalResult/FinalResult/ScoreContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_bn8xj")
+theme_override_styles/normal = SubResource("StyleBoxFlat_gekad")
+placeholder_text = "Enter Your Name Here..."
+
+[node name="HSeparator2" type="HSeparator" parent="FinalResult/FinalResult/ScoreContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="FinalResult/FinalResult/ScoreContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_bn8xj")
+theme_override_font_sizes/font_size = 20
+text = "Submit?"
+horizontal_alignment = 1
+
+[node name="YesButton" type="Button" parent="FinalResult/FinalResult/ScoreContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.938962, 0.45383, 0.210038, 1)
+theme_override_fonts/font = ExtResource("1_bn8xj")
+theme_override_styles/normal = SubResource("StyleBoxFlat_06t4i")
+theme_override_styles/hover = SubResource("StyleBoxFlat_k8lf3")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_xej5v")
+text = "Yep"
+
+[node name="NoButton" type="Button" parent="FinalResult/FinalResult/ScoreContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.938962, 0.45383, 0.210038, 1)
+theme_override_fonts/font = ExtResource("1_bn8xj")
+theme_override_styles/normal = SubResource("StyleBoxFlat_06t4i")
+theme_override_styles/hover = SubResource("StyleBoxFlat_k8lf3")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_xej5v")
+text = "Nah"

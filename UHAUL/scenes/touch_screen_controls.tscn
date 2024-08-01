@@ -1,0 +1,76 @@
+[gd_scene load_steps=7 format=3 uid="uid://w2x5y2fu4155"]
+
+[ext_resource type="Texture2D" uid="uid://dp7ax0pre3eb8" path="res://assets/button_xbox_digital_a_1.png" id="1_1ttrd"]
+[ext_resource type="Texture2D" uid="uid://cf4j13i0oojcu" path="res://assets/button_xbox_digital_a_2.png" id="2_1nm14"]
+[ext_resource type="Texture2D" uid="uid://dbu0ab13kwxe8" path="res://assets/button_xbox_digital_b_1.png" id="3_cxrgs"]
+[ext_resource type="Texture2D" uid="uid://ui6b4as8c8r7" path="res://assets/button_xbox_digital_b_2.png" id="4_scara"]
+[ext_resource type="Texture2D" uid="uid://crvnkqdjlrnck" path="res://assets/button_xbox_digital_x_1.png" id="5_3duxy"]
+[ext_resource type="Texture2D" uid="uid://bcbailpv84m2i" path="res://assets/button_xbox_digital_x_3.png" id="6_jrqm6"]
+
+[node name="TouchScreenControls" type="CanvasLayer"]
+
+[node name="JumpControl" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -448.0
+offset_top = -184.0
+offset_right = -408.0
+offset_bottom = -144.0
+grow_horizontal = 0
+grow_vertical = 0
+
+[node name="JumpButton" type="TouchScreenButton" parent="JumpControl"]
+position = Vector2(112, 32)
+scale = Vector2(0.2, 0.2)
+texture_normal = ExtResource("1_1ttrd")
+texture_pressed = ExtResource("2_1nm14")
+action = "ui_accept"
+visibility_mode = 1
+
+[node name="DuckControl" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -368.0
+offset_top = -152.0
+offset_right = -328.0
+offset_bottom = -112.0
+grow_horizontal = 0
+grow_vertical = 0
+
+[node name="DuckButton" type="TouchScreenButton" parent="DuckControl"]
+position = Vector2(128, 0)
+scale = Vector2(0.2, 0.2)
+texture_normal = ExtResource("3_cxrgs")
+texture_pressed = ExtResource("4_scara")
+action = "ui_down"
+visibility_mode = 1
+
+[node name="KickControl" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -400.0
+offset_top = -152.0
+offset_right = -360.0
+offset_bottom = -112.0
+grow_horizontal = 0
+grow_vertical = 0
+
+[node name="KickButton" type="TouchScreenButton" parent="KickControl"]
+position = Vector2(256, 0)
+scale = Vector2(0.2, 0.2)
+texture_normal = ExtResource("5_3duxy")
+texture_pressed = ExtResource("6_jrqm6")
+action = "ui_right"
+visibility_mode = 1

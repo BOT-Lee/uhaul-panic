@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://b5jqwrcvyaisj"]
+
+[ext_resource type="Texture2D" uid="uid://dkva8hrsmfb0t" path="res://assets/Chair.png" id="1_2fsls"]
+
+[node name="Area2D" type="Area2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+scale = Vector2(5, 5)
+texture = ExtResource("1_2fsls")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+scale = Vector2(5, 5)
+polygon = PackedVector2Array(11.2, 0, 22.4, 0, 22.4, 16, -22.4, 16, -17.6, -14.4, 9.6, -14.4)

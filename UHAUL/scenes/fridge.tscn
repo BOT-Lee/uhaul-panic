@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://1ud5hbjih8q4"]
+
+[ext_resource type="Texture2D" uid="uid://cqdjuirw5343r" path="res://assets/Fridge.png" id="1_i60rg"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_u4ub1"]
+size = Vector2(124, 231)
+
+[node name="Area2D" type="Area2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+scale = Vector2(5, 5)
+texture = ExtResource("1_i60rg")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, 4.5)
+shape = SubResource("RectangleShape2D_u4ub1")

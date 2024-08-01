@@ -1,0 +1,41 @@
+[gd_scene load_steps=3 format=3 uid="uid://dvg5cu7jb32wx"]
+
+[ext_resource type="FontFile" uid="uid://33c7k13n65ee" path="res://assets/c08n__.ttf" id="1_w3xuv"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jg3mx"]
+bg_color = Color(0.0352941, 0.0352941, 0.0352941, 0.796078)
+
+[node name="Leaderboard" type="CanvasLayer"]
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_jg3mx")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="PanelContainer"]
+layout_mode = 2
+
+[node name="PositionLabel" type="Label" parent="PanelContainer/HBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_w3xuv")
+theme_override_font_sizes/font_size = 40
+text = "1."
+
+[node name="NameLabel" type="Label" parent="PanelContainer/HBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_w3xuv")
+theme_override_font_sizes/font_size = 40
+text = "Test"
+
+[node name="VSeparator" type="VSeparator" parent="PanelContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="ScoreLabel" type="Label" parent="PanelContainer/HBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_w3xuv")
+theme_override_font_sizes/font_size = 40
+text = "300000"
