@@ -7,7 +7,8 @@ This repository consists of the "Software_Design_Files" folder, the "Released_Ga
 # Software Design Files
 The "Software_Design_Files" folder contains all of the Godot Project files, used to design and create the game. To open up the project, you will need to install Godot from their website:
 https://godotengine.org/
-Once you do and open the program, it will show a screen containing Local Projects. Press the "Import" button. From there, you have two options to import the project - you can either download the UHaul folder, then open the "project.godot" file within the folder to import the project, or you can download the UHaul file as a .zip file and import it into Godot.
+
+Once you do and open the program, it will show a screen containing Local Projects. Press the "Import" button. From there, you have two options to import the project - you can either download the "Software_Design_Files" folder, then select the "project.godot" file within the folder to import the project, or you can download the "Software_Design_Files" file as a .zip file and import it into Godot by selecting the zip.
 
 The main files of interest are the "project.godot" file, as well as the "scenes" folder - which contains the smaller subcomponent "scenes" and .gd files (which are the GDScript code files attached to scenes).
 Additionally, the "assets" folder contains all the assets used (e.g. .png files) in the creation of the game.
