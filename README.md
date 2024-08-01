@@ -2,7 +2,7 @@
 This is Ethan Lee's repository for ECE 1895's Final Project.
 
 # Organization
-This repository consists of the "Software_Design_Files" folder, the "Released_Game_Builds" folder, the game credit list, and this README.md file.
+This repository consists of the "Software_Design_Files" folder, the "Released_Game_Builds" folder, the "Credit_List" folder, and this README.md file.
 
 # Software Design Files
 The "Software_Design_Files" folder contains all of the Godot Project files, used to design and create the game. To open up the project, you will need to install Godot from their website:
@@ -27,6 +27,8 @@ Note that the game does not successfully function in this .apk, as noted in the 
 To open the game on an Android device, copy the .apk file and open it on an Android device.
 
 # Credit List
+The "Credit_List" folder contains a single text file, "Game_Credit_List.txt".
+
 "Game_Credit_List.txt" contains a credit list listing the community assets that I used, as well as the various tutorials and documentation I read or watched while developing the game.
 The main item of interest is the link under "Gameplay Loop Development Help", which points to a tutorial demonstrating how to make a 2D runner in Godot. This was the most helpful resource in terms of developing the game, and is the primary tutorial that I used.
 However, all of the video tutorials and documentation that I mentioned in the final report are located here as YouTube links.
